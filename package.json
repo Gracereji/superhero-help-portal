@@ -1,0 +1,26 @@
+{
+  "name": "superhero-help-portal",
+  "version": "1.0.0",
+  "description": "Full-stack Superhero Help Portal for AURA - The Guardian of Human Potential",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -k -n \"SERVER,CLIENT\" -c \"cyan,magenta\" \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "dev:server": "npm run dev --prefix server",
+    "dev:client": "npm run dev --prefix client",
+    "install:server": "npm install --prefix server",
+    "install:client": "npm install --prefix client",
+    "install:all": "npm install && npm run install:server && npm run install:client"
+  },
+  "keywords": [
+    "superhero",
+    "portal",
+    "react",
+    "express",
+    "node"
+  ],
+  "author": "TechAscent Candidate",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
